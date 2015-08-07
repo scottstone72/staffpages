@@ -1,0 +1,29 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    id:
+        label: ID
+        searchable: true
+        width: 10%
+
+    image:
+        label: Image
+        type: partial
+        path: plugins/stone/staffpages/models/manager/_column_image.htm
+        sortable: false
+        width: 10%
+
+    name:
+        label: Name
+        searchable: true
+        width: 15%
+
+    title:
+        label: Title
+        width: 15%
+
+    description:
+        label: Description
+        width: 40%

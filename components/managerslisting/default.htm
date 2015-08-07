@@ -1,0 +1,12 @@
+{% for manager in __SELF__.managers %}
+<li class="list-group-item">
+        <h2 class="manager-name text-center">{{ manager.name }}</h2>
+
+        <div class="manager-image left" id="manager-image-{{ loop.index }}">
+            <img src="{{ manager.image.getThumb(260, auto) }}" alt=""/>
+        </div>
+        <br>
+        <h4 class="manager-title"><strong>{{ manager.title }}</strong></h4>
+        <div class="manager-description">{{ manager.description }}</div>
+</li>
+{% endfor %}

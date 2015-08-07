@@ -1,0 +1,7 @@
+1.0.1: First version of StaffPages
+1.0.2:
+    - Added table for storing staff
+    - create_staff_table.php
+1.0.3:
+    - Added table for storing managers
+    - create_managers_table.php

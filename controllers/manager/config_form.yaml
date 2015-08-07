@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Manager
+
+# Model Form Field configuration
+form: $/stone/staffpages/models/manager/fields.yaml
+
+# Model Class name
+modelClass: Stone\StaffPages\Models\Manager
+
+# Default redirect location
+defaultRedirect: stone/staffpages/manager
+
+# Create page
+create:
+    title: Create Manager
+    redirect: stone/staffpages/manager/update/:id
+    redirectClose: stone/staffpages/manager
+
+# Update page
+update:
+    title: Edit Manager
+    redirect: stone/staffpages/manager
+    redirectClose: stone/staffpages/manager
+
+# Preview page
+preview:
+    title: Preview Manager

@@ -1,0 +1,12 @@
+{% for staff in __SELF__.staffListing %}
+<li class="list-group-item">
+    <div class="panel">
+        <div class="staff-image" id="staff-image-{{ loop.index }}">
+            <img src="{{ staff.image.path }}" alt="">
+        </div>
+        <div class="staff-name text-center">{{ staff.name }}</div>
+        <h4 class="staff-title"><strong>{{ staff.title }}</strong></h4>
+        <div class="staff-description">{{ staff.description }}</div>
+    </div>
+</li>
+{% endfor %}

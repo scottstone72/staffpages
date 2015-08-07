@@ -1,0 +1,34 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Staff
+
+# Model Form Field configuration
+form: $/stone/staffpages/models/staff/fields.yaml
+
+# Model Class name
+modelClass: Stone\StaffPages\Models\Staff
+
+# Default redirect location
+defaultRedirect: stone/staffpages/staff
+
+# Create page
+create:
+    title: Create Staff
+    redirect: stone/staffpages/staff/update/:id
+    redirectClose: stone/staffpages/staff
+    flashSave: Staff member has been created!
+
+# Update page
+update:
+    title: Edit Staff
+    redirect: stone/staffpages/staff
+    redirectClose: stone/staffpages/staff
+    flashSave: Staff member has been saved.
+    flashDelete: Staff member has been deleted.
+
+# Preview page
+preview:
+    title: Preview Staff

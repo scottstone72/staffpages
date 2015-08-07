@@ -1,0 +1,27 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    id:
+        label: ID
+        disabled: true
+
+    name:
+        label: Name
+        type: text
+
+    title:
+        label: Title
+        type: text
+
+    description:
+        label: Description
+        type: textarea
+
+    image:
+        label: User Image
+        type: fileupload
+        mode: image
+        imageHeight: 260
+        imageWidth: 260

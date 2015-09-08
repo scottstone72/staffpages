@@ -1,2 +1,9 @@
-<?= '<img src="' . $record->image->getThumb(80, 80) .'" class="staff-image" />' ?>
+<?php if ($record->image): ?>
 
+<img src="<?= $record->image->getThumb(80, 80) ?>" />
+
+<?php else: ?>
+
+<img src="http://placehold.it/80x80" />
+
+<?php endif ?>

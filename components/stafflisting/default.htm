@@ -3,7 +3,7 @@
     <div class="panel staff-member">
         <div class="staff-image" id="staff-image-{{ loop.index }}">
             {% if staff.image %}
-            <img src="{{ staff.image.path }}" alt="staff image">
+            <img src="{{ staff.image.getThumb(264,auto) }}" alt="staff image">
             {% else %}
             <p>Sorry no image provided</p>
             {% endif %}

@@ -4,7 +4,7 @@
 
     <div class="manager-image left" id="manager-image-{{ loop.index }}">
         {% if manager.image %}
-        <img src="{{ manager.image.path }}" alt="manager image"/>
+        <img src="{{ manager.image.getThumb(450,auto) }}" alt="manager image"/>
         {% else %}
         <p>Sorry no image provided</p>
         {% endif %}
